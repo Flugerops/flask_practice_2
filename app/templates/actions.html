@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+</head>
+<body>
+    <h1>Api practice</h1>
+    <form action="/actions" method="post">
+        <label for="action">Choice:</label>
+        <select id="action" name="action">
+            {% for action in actions %}
+                <option value="{{ action }}">{{ action }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Go</button>
+    </form>
+</body>
+</html>
